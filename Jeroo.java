@@ -9,13 +9,13 @@ public class Jeroo extends JerooBase {
         
     }
     // Put any helpermethods here
-     public void diagonal(){
+public void diagonal(){
   hop();
   turn(RIGHT);
   hop();
   turn(LEFT);
 }
-    public void setup(){
+public void setup(){
   diagonal();
   diagonal();
   diagonal();
@@ -23,7 +23,8 @@ public class Jeroo extends JerooBase {
   diagonal();
   diagonal();
 }
-    public void hopplant3() {
+
+public void hopplant3() {
   hop();
   plant();
   hop();
@@ -32,14 +33,14 @@ public class Jeroo extends JerooBase {
   plant();
 }
 
-    public void hopplant2() {
+public void hopplant2() {
   hop();
   plant();
   hop();
   plant();
 }
 
-    public void wraparm(){
+public void wraparm(){
   turn(LEFT);
   hopplant3();
   turn(RIGHT);
@@ -48,7 +49,7 @@ public class Jeroo extends JerooBase {
   hopplant3();
 }
 
-    public void plantCross() {
+public void plantCross() {
   setup();
   wraparm();
   wraparm();
