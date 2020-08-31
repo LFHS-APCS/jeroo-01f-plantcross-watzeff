@@ -6,7 +6,11 @@ public class Jeroo extends JerooBase {
 
     
     public void plantCross() {
-        
+  setup();
+  wraparm();
+  wraparm();
+  wraparm();
+  wraparm();
     }
     // Put any helpermethods here
 public void diagonal(){
@@ -49,13 +53,6 @@ public void wraparm(){
   hopplant3();
 }
 
-public void plantCross() {
-  setup();
-  wraparm();
-  wraparm();
-  wraparm();
-  wraparm();
-}
     
     
     
