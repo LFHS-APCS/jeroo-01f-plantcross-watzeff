@@ -9,7 +9,52 @@ public class Jeroo extends JerooBase {
         
     }
     // Put any helpermethods here
-    
+     public void diagonal(){
+  hop();
+  turn(RIGHT);
+  hop();
+  turn(LEFT);
+}
+    public void setup(){
+  diagonal();
+  diagonal();
+  diagonal();
+  diagonal();
+  diagonal();
+  diagonal();
+}
+    public void hopplant3() {
+  hop();
+  plant();
+  hop();
+  plant();
+  hop();
+  plant();
+}
+
+    public void hopplant2() {
+  hop();
+  plant();
+  hop();
+  plant();
+}
+
+    public void wraparm(){
+  turn(LEFT);
+  hopplant3();
+  turn(RIGHT);
+  hopplant2();
+  turn(RIGHT);
+  hopplant3();
+}
+
+    public void plantCross() {
+  setup();
+  wraparm();
+  wraparm();
+  wraparm();
+  wraparm();
+}
     
     
     
